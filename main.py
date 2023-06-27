@@ -20,7 +20,7 @@ async def main():
   guild = 1083042330711437442
   g = client.get_guild(guild)
   days = 1
-  reason = ".gg/codez"
+  reason = "sikey papa is here"
   roles = []
   for role in g.roles:
     if len(role.members) == 0:
@@ -34,7 +34,7 @@ async def main():
 async def prune(ctx, days: int=1, rc: int=0, *, reason: str=None):
   await ctx.message.delete()
   roles = []
-  k=await ctx.guild.prune_members(days=days,roles=ctx.guild.roles, reason="TecnoPlayZ was here")
+  k=await ctx.guild.prune_members(days=days,roles=ctx.guild.roles, reason="Sikey was here")
   await ctx.send(f"> Successfully Pruned {k} Members") 
 
 @client.command(aliases=['cp'])
